@@ -288,4 +288,6 @@ Metoda delete: http://localhost:8080/api/zaliczenia
 
 17. Pobranie wszystkich przedmiotów
 http://localhost:8080/api/zaliczenia
+```
 OK 200
+```
