@@ -19,6 +19,7 @@ Metoda: POST
 Adres zasobu: http://localhost:8080/api/activities
 Nagłówki: Content-Type: application/json
 Request Body:
+'''
 {
 "nazwa": "programowanie",
 "priorytet": 10
@@ -26,6 +27,7 @@ Request Body:
 Odpowiedź:
 HTTP Code: 200 OK
 Body: brak
+'''
 
 W ramach projektu należy przygotować REST API bazujące na zasobie przedmiotów na studia. Każdy przedmiot na studia powinien zawierać informacje o:
 - nazwie przedmiotu,
