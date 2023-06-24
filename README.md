@@ -63,6 +63,7 @@ Projekt należy umieścić w dedykowanym repozytorium na https://github.com, a r
 RAPORT z POSTMAN:
 
 Próby:
+```
 [
     {
         "id": 1,
@@ -79,10 +80,11 @@ Próby:
         "zaliczenie": true
     }
 ]
-
+```
 1. Wprowadzenie danych jak powyżej (niektóre dane nie są idealnym odzwierciedleniem :) ):
 2. Pobranie danych:
 http://localhost:8080/api/zaliczenia
+```
 [
     {
         "id": 1,
@@ -141,9 +143,10 @@ http://localhost:8080/api/zaliczenia
         "zaliczenie": true
     }
 ]
-
-3. Przedmioty z egzamienm
+```
+4. Przedmioty z egzamienm
 http://localhost:8080/api/zaliczenia?zaliczenie=tak
+```
 [
     {
         "id": 1,
@@ -167,9 +170,10 @@ http://localhost:8080/api/zaliczenia?zaliczenie=tak
         "zaliczenie": true
     }
 ]
-
-4. Przedmioty w sali 216
+```
+6. Przedmioty w sali 216
 http://localhost:8080/api/zaliczenia?sala=216
+```
 [
     {
         "id": 3,
@@ -193,9 +197,10 @@ http://localhost:8080/api/zaliczenia?sala=216
         "zaliczenie": false
     }
 ]
-
-5. Przedmioty które nie mają egzaminu i znajdują się w sali 208
+```
+8. Przedmioty które nie mają egzaminu i znajdują się w sali 208
 http://localhost:8080/api/zaliczenia?zaliczenie=nie&sala=208
+```
 [
     {
         "id": 5,
@@ -212,9 +217,10 @@ http://localhost:8080/api/zaliczenia?zaliczenie=nie&sala=208
         "zaliczenie": false
     }
 ]
-
-6. Pobieranie przedmiotu o id = 3
+```
+10. Pobieranie przedmiotu o id = 3
 http://localhost:8080/api/zaliczenia/3
+```
 {
     "id": 3,
     "nazwa": "Metodologie obiektowe",
@@ -222,15 +228,16 @@ http://localhost:8080/api/zaliczenia/3
     "sala": "216",
     "zaliczenie": false
 }
-
-7. Pobieranie przedmiotu o id = 15
+```
+12. Pobieranie przedmiotu o id = 15
 404 Not found
 
-8. Usunięcie przedmiotu o id = 2 oraz id = 4 (ponieważ id = 2 było testowe)
+13. Usunięcie przedmiotu o id = 2 oraz id = 4 (ponieważ id = 2 było testowe)
 Metoda delete: http://localhost:8080/api/zaliczenia/2 oraz http://localhost:8080/api/zaliczenia/4
 
-9. Pobranie wszystkich przedmiotów
+14. Pobranie wszystkich przedmiotów
 http://localhost:8080/api/zaliczenia
+```
 [
     {
         "id": 1,
@@ -275,10 +282,10 @@ http://localhost:8080/api/zaliczenia
         "zaliczenie": true
     }
 ]
-
-10. Usunięcie wszystkich przedmiotów
+```
+16. Usunięcie wszystkich przedmiotów
 Metoda delete: http://localhost:8080/api/zaliczenia
 
-11. Pobranie wszystkich przedmiotów
+17. Pobranie wszystkich przedmiotów
 http://localhost:8080/api/zaliczenia
 OK 200
